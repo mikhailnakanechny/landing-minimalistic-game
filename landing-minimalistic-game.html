@@ -11,96 +11,110 @@
     <title>Landing - minimalistic game</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="./src/bootstrap.min.css"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
     <!-- Custom Fonts ./landing/src/ -->
-    <link href="./src/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="./src/magnific-popup.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet"
+          type="text/css">
     <!-- Theme CSS -->
-    <link href="./src/agency.min.css" rel="stylesheet">
+    <link href="src/css/agency.min.css" rel="stylesheet">
+
+    <link href="src/css/myCss.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top" class="index">
 <!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
 
-            <button type="button" class="navbar-toggle" >
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="#page-top">minimalistic-game</a>
+        <button type="button" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#page-top">minimalistic-game</a>
 
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden active">
-                    <a href="#page-top"></a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#screenshots">Screenshots</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#play">Play</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#developer">Developer</a>
-                </li>
-            </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="hidden active">
+                <a href="#page-top"></a>
+            </li>
+            <li class="">
+                <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li class="">
+                <a class="page-scroll" href="#screenshots">Screenshots</a>
+            </li>
+            <li class="">
+                <a class="page-scroll" href="#play">Play</a>
+            </li>
+            <li class="">
+                <a class="page-scroll" href="#developer">Developer</a>
+            </li>
+        </ul>
 
     </div>
     <!-- /.container-fluid -->
 </nav>
 
 <!-- Header -->
-<header>
+<header class="bg">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">minimalistic-game</div>
-            <h1>A game with a minimalist design</h1>
-            <a href="#about" class="page-scroll btn btn-xl">About</a>
+            <h2>Просьба подождать до 09.01, очень не хватает времени (при желании могу дать развернутые пояснения))</h2>
+            <h1>Minimalistic-game</h1>
+            <img src="src/img/kitty.gif" class="img-circle" alt="char image">
+            <h2>A game with a minimalistic design</h2>
+            <a href="#about" class="page-scroll btn btn-info btn-lg">About</a>
         </div>
     </div>
 </header>
 
 <!-- About Section -->
-<section id="about">
+<section id="about" class="bg-light-gray">
     <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-lg-2 text-center">
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <h2 class="section-heading">About</h2>
                 <h3 class="section-subheading text-muted">Some useful information.</h3>
             </div>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col-md-5">
+        <div class="row ">
+            <div class="col-lg-6 text-center">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-circle fa-stack-2x text-info"></i>
                         <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
                     </span>
                 <h4 class="service-heading">Description</h4>
-                <p class="text-muted">- Battle begins, have player and monster on 100hp or more.</p>
-                <p class="text-muted">- The player chooses the spell first.</p>
-                <p class="text-muted">- The player goes to the task screen.</p>
-                <p class="text-muted">- In the case of a successful decision - the spell is used,
+                <p class="text-muted">Battle begins, have player and monster on 100hp or more.</p>
+                <p class="text-muted">The player chooses the spell first.</p>
+                <p class="text-muted">The player goes to the task screen.</p>
+                <p class="text-muted">In the case of a successful decision - the spell is used,
                     otherwise the transition speed towards the monster.
                     Monster uses a spell, deals damage to the player.</p>
-                <p class="text-muted">- If the player won the battle with the next monster.</p>
-                <p class="text-muted">- If you lose - shows a table of records, with the</p>
+                <p class="text-muted">If the player won the battle with the next monster.</p>
+                <p class="text-muted">If you lose - shows a table of records, with the</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-6 text-center ">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-circle fa-stack-2x text-info"></i>
                         <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
                     </span>
                 <h4 class="service-heading">Technologies</h4>
-                <p class="text-muted">This game is built using: JavaScript, Bootstrap, jQuery, Canvas, Web Audio API</p>
+                <p class="text-muted">This game is built using: </p>
+                <p class="text-muted">JavaScript</p>
+                <p class="text-muted">Bootstrap</p>
+                <p class="text-muted">jQuery</p>
+                <p class="text-muted">Canvas</p>
             </div>
         </div>
     </div>
@@ -116,33 +130,33 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-6 screenshots-item">
-                <a class="screenshots-link" href="./src/Screenshot_1.png">
+                <a class="screenshots-link" href="src/img/Screenshot_1.png">
                     <div class="screenshots-hover">
                         <div class="screenshots-hover-content">
                             <i class="fa fa-arrows-alt fa-2x"></i>
                         </div>
                     </div>
-                    <img src="./src/Screenshot_1.png" class="img-responsive" alt="screenshot" width="600">
+                    <img src="src/img/Screenshot_1.png" class="img-responsive" alt="screenshot" width="600">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6 screenshots-item">
-                <a class="screenshots-link" href="./src/Screenshot_1.png">
+                <a class="screenshots-link" href="src/img/Screenshot_1.png">
                     <div class="screenshots-hover">
                         <div class="screenshots-hover-content">
                             <i class="fa fa-arrows-alt fa-2x"></i>
                         </div>
                     </div>
-                    <img src="./src/Screenshot_1.png" class="img-responsive" alt="screenshot" width="600">
+                    <img src="src/img/Screenshot_1.png" class="img-responsive" alt="screenshot" width="600">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6 screenshots-item">
-                <a class="screenshots-link" href="./src/Screenshot_1.png">
+                <a class="screenshots-link" href="src/img/Screenshot_1.png">
                     <div class="screenshots-hover">
                         <div class="screenshots-hover-content">
                             <i class="fa fa-arrows-alt fa-2x"></i>
                         </div>
                     </div>
-                    <img src="./src/Screenshot_1.png" class="img-responsive" alt="screenshot" width="600">
+                    <img src="src/img/Screenshot_1.png" class="img-responsive" alt="screenshot" width="600">
                 </a>
             </div>
         </div>
@@ -157,12 +171,12 @@
                 <h2 class="section-heading">Play</h2>
             </div>
         </div>
-        <div class="play-button">
-            <a href="https://mikhailnakanechny.github.io/minimalistic-game/" class="btn btn-xl">Let's PLAY!</a>
+        <div class="play-button ">
+            <a href="https://mikhailnakanechny.github.io/minimalistic-game/" class="btn btn-info btn-lg">Let's PLAY!</a>
         </div>
-
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
+                <img src="src/img/kitty.gif" class="img-circle" alt="char image">
                 <p class="large text-muted">Kitty rules!!!</p>
             </div>
         </div>
@@ -181,7 +195,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="team-member">
-                    <img src="./src/1(1).jpg" class="img-responsive img-circle" alt="photo">
+                    <img src="src/img/Developer.jpg" class="img-circle" alt="photo">
                     <h4>Mikhail Nakanechny</h4>
                     <p class="text-muted">Likely, Front-end Developer) Student of RSSchool</p>
                     <ul class="list-inline social-buttons">
@@ -219,22 +233,23 @@
 
 
 <!-- jQuery -->
-<script src="./src/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+<script src="src/js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
         crossorigin="anonymous"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="./src/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+<script src="src/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
 <!-- Plugin JavaScript -->
-<script src="./src/jquery.easing.min.js"
+<script src="src/js/jquery.easing.min.js"
         integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
         crossorigin="anonymous"></script>
 
-<script src="./src/jquery.magnific-popup.min.js"></script>
+<script src="src/js/jquery.magnific-popup.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="./src/agency.min.js"></script>
+<script src="src/js/agency.min.js"></script>
 
 
 </body>
